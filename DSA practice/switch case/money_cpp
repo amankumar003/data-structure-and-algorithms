@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int amt = 1330;
+    int notes = 100;
+    
+    switch (notes)
+    {
+    case 100:
+        int hndrd = amt / 100;
+        amt = amt - hndrd;
+        cout << hndrd;
+    case 50:
+        int fifty = amt / 50;
+        amt = amt - fifty;
+        cout << fifty;
+    case 30:
+        int thirty = amt / 30;
+        amt = amt - thirty;
+        cout << thirty;
+    case 1:
+        int one = amt / 1;
+        amt = amt - one;
+        cout << one;
+    }
+}
